@@ -15,7 +15,10 @@ let package = Package(
             name: "CardIO",
             path: "CardIO",
             exclude: ["SampleApp", "SampleApp-Swift"],
-            publicHeadersPath: "."
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath("CardIO")
+            ]
         )
     ]
 )
